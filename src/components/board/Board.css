@@ -1,0 +1,14 @@
+.board{
+    border: solid black 1px;
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+    /* background-image: url(../../images/woodboard.jpg); */
+    background-image: url(../../images/woodenBoard2.jpg);
+    background-size: cover;
+    height: 350px;
+}
+
+.boardRow{
+    display:flex;
+}
