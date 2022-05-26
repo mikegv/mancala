@@ -8,7 +8,7 @@ import NatureImageBackground from './images/natureBackground.jpg'
 
 import img1 from './images/natureBackground.jpg'
 import img2 from './images/outerspaceBackground.jpg'
-
+import img3 from './images/waterBackground.jpg'
 
 function App() {
   const DEMO_STATE = [0, 2, 5, 0, 0, 0, 1, 0, 1, 2, 3, 0, 0, 1,0]
@@ -392,7 +392,7 @@ useEffect(()=>{
       )
   }
 
-  let backgroundImageUrl = backgroundImage === 'img1' ? img1 : img2
+  let backgroundImageUrl = backgroundImage === 'img1' ? img1 : backgroundImage === 'img2' ? img2 : img3
   
   return (
 
