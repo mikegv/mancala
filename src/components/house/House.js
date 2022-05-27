@@ -49,7 +49,7 @@ const House = (props) => {
   
   return (
     <div style={{ textAlign: 'center' }}>
-      {/* <span style={{ fontWeight: 'bolder' }}>{props.index < 14 && props.index > 7 && props.houseCount}</span>
+      <span style={{ fontWeight: 'bolder' }}>{props.index < 14 && props.index > 7 && props.houseCount}</span>
 
       <div className='house' style={houseStyle} onClick={(e) => props.onClick(e, props.index)}>
         {new Array(props.houseCount).fill(1).map((item, index) => {
@@ -62,7 +62,7 @@ const House = (props) => {
         )}
 
       </div>
-      <span style={{ fontWeight: 'bolder' }}>{props.index > 0 && props.index < 7 && props.houseCount}</span> */}
+      <span style={{ fontWeight: 'bolder' }}>{props.index > 0 && props.index < 7 && props.houseCount}</span> 
     </div>
   )
 

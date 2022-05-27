@@ -42,7 +42,7 @@ const Board = (props) => {
           {numberOfStonesArray}
         </StonesAnimation> 
        } */}
-      {/* <House onClick={props.clickHandler} houseCount={props.board[0]} index={0} theme={props.theme} /> */}
+      {<House onClick={props.clickHandler} houseCount={props.board[0]} index={0} theme={props.theme} />}
       <div>
 
         <div className='boardRow'>
@@ -55,15 +55,15 @@ const Board = (props) => {
         </div>
 
         <div className='boardRow' >
-          {/* <House onClick={props.clickHandler} houseCount={props.board[1]} index={1} theme={props.theme} />
+           <House onClick={props.clickHandler} houseCount={props.board[1]} index={1} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[2]} index={2} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[3]} index={3} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[4]} index={4} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[5]} index={5} theme={props.theme} />
-          <House onClick={props.clickHandler} houseCount={props.board[6]} index={6} theme={props.theme} /> */}
+          <House onClick={props.clickHandler} houseCount={props.board[6]} index={6} theme={props.theme} />
         </div>
       </div>
-      {/* <House onClick={props.clickHandler} houseCount={props.board[7]} index={7} theme={props.theme} /> */}
+      {<House onClick={props.clickHandler} houseCount={props.board[7]} index={7} theme={props.theme} />}
     </div>
     );
 };
