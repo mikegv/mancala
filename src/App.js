@@ -169,13 +169,7 @@ function App() {
           setNumberOfStonesInMove(prevState => prevState - 1)
         } 
 
-        /* if (board[1] === 0 & board[2] === 0 & board[3] === 0 & board[4] === 0 & board[5] === 0 & board[6] === 0 & !isMoving) {
-          setGameOver(true)
-        } */
-        /* if (board[8] === 0 & board[9] === 0 & board[10] === 0 & board[11] === 0 & board[12] === 0 & board[13] === 0 ) {
-          if(numberOfStonesInMove === 0)
-          setGameOver(true)
-        } */
+  
       return
     }
 
@@ -184,8 +178,7 @@ function App() {
 
     else if(stonesAnimationPosition.index === 6 & !player1){/*else if player 2 and goes by player 1 store then skip that store*/
     setStonesAnimationPosition(prevState => ({...prevState, startY: topOfBoard, startX: prevState.endX , endX: prevState.endX + moveXBy, index: prevState.index + 1 }))
-      /* setNumberOfStonesInMove(prevState => prevState - 1) */
-      /* setBoard(prevState => [...prevState, prevState[stonesAnimationPosition.index + 1]++ ]) */
+      
   }else if(stonesAnimationPosition.index === 13){
       if(player1){
         setStonesAnimationPosition(prevState => ({...prevState, startY: topOfBoard.current.offsetTop + 300, startX: prevState.startX, endX: prevState.endX + 150  , index: 0}))
@@ -236,23 +229,7 @@ function App() {
     state[pocketIndex] = 0
     //distribute stones around
 
-/*   
-    while (stones > 0) {
-      console.log('going in index > ', index)
-      console.log('stones left > ', stones) 
 
-      if (state[index] === undefined) index = 0
-
-      if (player1 && index === 0) {
-        index = 1
-      } else if (!player1 && index === 7) {
-        index = 8
-      }
-      
-      state[index]++ 
-      index++
-      stones--
-    } */
 
     index--
     ///if you landed on am empty house steal the other players stones
@@ -283,9 +260,6 @@ function App() {
 
 
 
-      // setBoard([...state])
-      
-      // return
     }
     if (state[8] === 0 & state[9] === 0 & state[10] === 0 & state[11] === 0 & state[12] === 0 & state[13] === 0 & numberOfStonesInMove === 0) {
 
@@ -340,17 +314,17 @@ function App() {
     setShowStartScreen(false)
   }
 
-  if(showStartScreen){
-    return(
-        <StartScreen 
-          themeClickHandler={themeClickHandler} 
-          startGameButtonHandler={startGameButtonHandler} 
-          backgroundClickHandler={backgroundClickHandler} 
-          backgroundImage={backgroundImage} 
-          theme={theme} 
-        />
-      )
-  }
+  // if(showStartScreen){
+  //   return(
+  //       <StartScreen 
+  //         themeClickHandler={themeClickHandler} 
+  //         startGameButtonHandler={startGameButtonHandler} 
+  //         backgroundClickHandler={backgroundClickHandler} 
+  //         backgroundImage={backgroundImage} 
+  //         theme={theme} 
+  //       />
+  //     )
+  // }
 
   let backgroundImageUrl = backgroundImage === 'img1' ? img1 : img2 
   
