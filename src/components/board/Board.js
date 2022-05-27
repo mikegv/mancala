@@ -43,7 +43,7 @@ const Board = (props) => {
           {numberOfStonesArray}
         </StonesAnimation> 
        }
-      <House onClick={props.clickHandler} houseCount={props.board[0]} index={0} theme={props.theme} />
+      {/* <House onClick={props.clickHandler} houseCount={props.board[0]} index={0} theme={props.theme} /> */}
       <div>
 
         <div className='boardRow'>
