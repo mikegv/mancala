@@ -1,48 +1,47 @@
 import React from 'react';
 import './Board.css'
 import House from '../house/House';
-import Stone from '../stones/Stone';
-import styled, { keyframes } from 'styled-components';
+// import Stone from '../stones/Stone';
+// import styled, { keyframes } from 'styled-components';
 
 //
 //keyframes for stonesAnimation
-const move = (startX, endX) => keyframes`
-  from {
-    left: ${startX + 'px'};
-  }
-  to {
-    left: ${endX + 'px'};
-  }
-`
-//
-//styled component for the animation
-const StonesAnimation = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 60px;
-  height: 50px;
-  background-color: transparent;
-  position: absolute;
-  left: ${props => props.endX + 'px'};
-  top: ${props => props.startY + 'px'};
-  z-index: 13;
-  animation-name: ${props => move(props.startX, props.endX)};
-  animation-duration: .8s;
-  animation-timing-function: ease-in-out;
-`
+// const move = (startX, endX) => keyframes`
+//   from {
+//     left: ${startX + 'px'};
+//   }
+//   to {
+//     left: ${endX + 'px'};
+//   }
+// `
+// //
+// //styled component for the animation
+// const StonesAnimation = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 60px;
+//   height: 50px;
+//   background-color: transparent;
+//   position: absolute;
+//   left: ${props => props.endX + 'px'};
+//   top: ${props => props.startY + 'px'};
+//   z-index: 13;
+//   animation-name: ${props => move(props.startX, props.endX)};
+//   animation-duration: .8s;
+//   animation-timing-function: ease-in-out;
+// `
 
 const Board = (props) => {
 
-  let numberOfStonesArray = props.numberOfStonesInMove > 4 ? [<Stone theme={props.theme} style={{position:'absolute', left:'10px', top: '15px', zIndex: '14'}}/>,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />] : new Array(props.numberOfStonesInMove).fill(0).map(item => <Stone theme={props.theme} /> )
+  //let numberOfStonesArray = props.numberOfStonesInMove > 4 ? [<Stone theme={props.theme} style={{position:'absolute', left:'10px', top: '15px', zIndex: '14'}}/>,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />] : new Array(props.numberOfStonesInMove).fill(0).map(item => <Stone theme={props.theme} /> )
 
   return (
       // <div className='board' ref={props.topOfBoard}> 
       <div className='board'>
-        {        
-        props.isMoving && !props.gameOver && <StonesAnimation onAnimationEnd={props.afterAnimation} startX={props.stonesAnimationPosition.startX} endX={props.stonesAnimationPosition.endX} startY={props.stonesAnimationPosition.startY}> 
+        {/* {         props.isMoving && !props.gameOver && <StonesAnimation onAnimationEnd={props.afterAnimation} startX={props.stonesAnimationPosition.startX} endX={props.stonesAnimationPosition.endX} startY={props.stonesAnimationPosition.startY}> 
           {numberOfStonesArray}
         </StonesAnimation> 
-       }
+       } */}
       {/* <House onClick={props.clickHandler} houseCount={props.board[0]} index={0} theme={props.theme} /> */}
       <div>
 
