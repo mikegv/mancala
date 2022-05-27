@@ -2,7 +2,7 @@ import React from 'react';
 import './Board.css'
 import House from '../house/House';
 import Stone from '../stones/Stone';
- import styled, { keyframes } from 'styled-components';
+//  import styled, { keyframes } from 'styled-components';
 
 //
 //keyframes for stonesAnimation
@@ -36,8 +36,8 @@ const Board = (props) => {
   //let numberOfStonesArray = props.numberOfStonesInMove > 4 ? [<Stone theme={props.theme} style={{position:'absolute', left:'10px', top: '15px', zIndex: '14'}}/>,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />] : new Array(props.numberOfStonesInMove).fill(0).map(item => <Stone theme={props.theme} /> )
 
   return (
-      // <div className='board' ref={props.topOfBoard}> 
-      <div className='board'>
+      <div className='board' ref={props.topOfBoard}> 
+      
         {/* {         props.isMoving && !props.gameOver && <StonesAnimation onAnimationEnd={props.afterAnimation} startX={props.stonesAnimationPosition.startX} endX={props.stonesAnimationPosition.endX} startY={props.stonesAnimationPosition.startY}> 
           {numberOfStonesArray}
         </StonesAnimation> 
