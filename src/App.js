@@ -336,7 +336,7 @@ function App() {
     
       {/* <Modal gameOver={gameOver} modalClickHandler={modalClickHandler} board={board} /> */}
       <p style={player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }} >Player 2</p>
-      <Board theme={theme} numberOfStonesInMove={numberOfStonesInMove} clickHandler={clickHandler} board={board} gameOver={gameOver} afterAnimation={afterAnimation} isMoving={isMoving} stonesAnimationPosition={stonesAnimationPosition} topOfBoard={topOfBoard} /> 
+      {/* <Board theme={theme} numberOfStonesInMove={numberOfStonesInMove} clickHandler={clickHandler} board={board} gameOver={gameOver} afterAnimation={afterAnimation} isMoving={isMoving} stonesAnimationPosition={stonesAnimationPosition} topOfBoard={topOfBoard} />  */}
        <p style={!player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }}>Player 1</p> 
     </div>
  
