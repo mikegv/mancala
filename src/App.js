@@ -52,72 +52,72 @@ function App() {
 
 
 
-  // useEffect(
-  //   ()=>{
-  //     if(firstLoad)setFirstLoad(false)
-  //     else{
-  //       setIsMoving(true)
-  //     }
-  //   }
-  // , [stonesAnimationPosition])
+  useEffect(
+    ()=>{
+      if(firstLoad)setFirstLoad(false)
+      else{
+        setIsMoving(true)
+      }
+    }
+  , [stonesAnimationPosition])
 
 
 
-//   useEffect(
-//     ()=>{
-//      if(!isMoving){
+  useEffect(
+    ()=>{
+     if(!isMoving){
 
-//       let playerTotal = 0
+      let playerTotal = 0
 
-//       if(!isMoving & numberOfStonesInMove === 0 & board[stonesAnimationPosition.index + 1] === 1 & board[14 - stonesAnimationPosition.index - 1] > 0){
+      if(!isMoving & numberOfStonesInMove === 0 & board[stonesAnimationPosition.index + 1] === 1 & board[14 - stonesAnimationPosition.index - 1] > 0){
       
       
 
-//       if(!player1 & stonesAnimationPosition.index + 1 < 7 ){
-//           setBoard(prevState => [...prevState, prevState[7] = 1 + prevState[14 - stonesAnimationPosition.index - 1 ] + prevState[7], prevState[stonesAnimationPosition.index + 1] = 0, prevState[14 - stonesAnimationPosition.index - 1 ] = 0 ])
-//       }
-//       if(player1 & stonesAnimationPosition.index + 1 > 7){
-//         setBoard(prevState => [...prevState, prevState[0] = 1 + prevState[14 - stonesAnimationPosition.index - 1 ] + prevState[0],prevState[stonesAnimationPosition.index + 1] = 0, prevState[14 - stonesAnimationPosition.index - 1 ] = 0 ])
-//       }
+      if(!player1 & stonesAnimationPosition.index + 1 < 7 ){
+          setBoard(prevState => [...prevState, prevState[7] = 1 + prevState[14 - stonesAnimationPosition.index - 1 ] + prevState[7], prevState[stonesAnimationPosition.index + 1] = 0, prevState[14 - stonesAnimationPosition.index - 1 ] = 0 ])
+      }
+      if(player1 & stonesAnimationPosition.index + 1 > 7){
+        setBoard(prevState => [...prevState, prevState[0] = 1 + prevState[14 - stonesAnimationPosition.index - 1 ] + prevState[0],prevState[stonesAnimationPosition.index + 1] = 0, prevState[14 - stonesAnimationPosition.index - 1 ] = 0 ])
+      }
         
-//     }
+    }
       
 
 
 
-//       //check if game over
-//       if(board[1] === 0 & board[2] === 0 & board[3] === 0 & board[4] === 0 & board[5] === 0 & board[6] === 0 )
-//       {
-//         playerTotal = board[0]
-//         for(let i = 8; i < 14; i++){
-//             playerTotal = board[i] + playerTotal
-//         }        
-//         setBoard(prevState => [playerTotal, 0,0,0,0,0,0,prevState[7], 0,0,0,0,0,0])
-//         setGameOver(true)}
-//       else if (board[8] === 0 & board[9] === 0 & board[10] === 0 & board[11] === 0 & board[12] === 0 & board[13] === 0 ) {
-//         playerTotal = board[7]
-//         for(let i = 1; i < 7; i++){
-//             playerTotal = board[i] + playerTotal
-//         }
-//         setBoard(prevState => [prevState[0], 0,0,0,0,0,0, playerTotal, 0,0,0,0,0,0])
-//         setGameOver(true)
-//       }
+      //check if game over
+      if(board[1] === 0 & board[2] === 0 & board[3] === 0 & board[4] === 0 & board[5] === 0 & board[6] === 0 )
+      {
+        playerTotal = board[0]
+        for(let i = 8; i < 14; i++){
+            playerTotal = board[i] + playerTotal
+        }        
+        setBoard(prevState => [playerTotal, 0,0,0,0,0,0,prevState[7], 0,0,0,0,0,0])
+        setGameOver(true)}
+      else if (board[8] === 0 & board[9] === 0 & board[10] === 0 & board[11] === 0 & board[12] === 0 & board[13] === 0 ) {
+        playerTotal = board[7]
+        for(let i = 1; i < 7; i++){
+            playerTotal = board[i] + playerTotal
+        }
+        setBoard(prevState => [prevState[0], 0,0,0,0,0,0, playerTotal, 0,0,0,0,0,0])
+        setGameOver(true)
+      }
 
-//       checkGameOver()
+      checkGameOver()
 
    
 
-//      }
-//     }
-//   , [isMoving])
+     }
+    }
+  , [isMoving])
 
 
-// useEffect(()=>{
-//   if(!gameOver){
-//   checkGameOver()
-//   }
+useEffect(()=>{
+  if(!gameOver){
+  checkGameOver()
+  }
 
-// },[board])
+},[board])
 
 
 
