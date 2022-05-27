@@ -2,34 +2,10 @@ import React from 'react';
 import './Board.css'
 import House from '../house/House';
 import Stone from '../stones/Stone';
-//  import styled, { keyframes } from 'styled-components';
+import {StonesAnimation} from '../styledComponents/styledComponents'
 
-//
-//keyframes for stonesAnimation
-// const move = (startX, endX) => keyframes`
-//   from {
-//     left: ${startX + 'px'};
-//   }
-//   to {
-//     left: ${endX + 'px'};
-//   }
-// `
-// //
-// //styled component for the animation
-// const StonesAnimation = styled.div`
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 60px;
-//   height: 50px;
-//   background-color: transparent;
-//   position: absolute;
-//   left: ${props => props.endX + 'px'};
-//   top: ${props => props.startY + 'px'};
-//   z-index: 13;
-//   animation-name: ${props => move(props.startX, props.endX)};
-//   animation-duration: .8s;
-//   animation-timing-function: ease-in-out;
-// `
+
+
 
 const Board = (props) => {
 

@@ -1,19 +1,8 @@
 // import './Stone.css'  
-    // ${props => props.theme === "second" ? 
-    // 'background-color: red' : props.theme == 'third' ? 'background-color: purple' : 'background-color: rgb(0,68,255)'}
+   
 // import styled from 'styled-components';
 
-// const Stone = styled.div`
-//     position: relative;
-//     border: solid black 1px;
-//     height: 25px;
-//     width: 25px;
-//     border-radius: 25px;
-//     margin: 1px;
-//     box-shadow: inset 3px 2px 6px 3px rgb(0,30, 90);
-//     background-color: red;
-   
-// `
+
 // const Stone = (props) => {
 //     const stoneStyle={
 //         position: 'relative',
