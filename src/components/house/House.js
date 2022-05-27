@@ -32,20 +32,20 @@ const storeStyle = {
 const House = (props) => {
   //component for all pockets, conditionally renders the two special ones
 
-  // if (props.index === 0 || props.index === 7) {
-  //   return (
-  //     <>
+  if (props.index === 0 || props.index === 7) {
+    return (
+      <>
 
-  //     <div className='store' style={storeStyle}>
-  //     {props.houseCount}
+      <div className='store' style={storeStyle}>
+      {props.houseCount}
 
-  //              {new Array(props.houseCount).fill(1).map((item, index) => <Stone theme={props.theme} />
-  //       )}
+               {new Array(props.houseCount).fill(1).map((item, index) => <Stone theme={props.theme} />
+        )}
 
-  //     </div>
-  //     </>
-  //   )
-  // }
+      </div>
+      </>
+    )
+  }
   
   return (
     <div style={{ textAlign: 'center' }}>
