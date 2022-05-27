@@ -1,12 +1,12 @@
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
-import Board from './components/board/Board';
-import Modal from './components/modal/Modal';
+// import Board from './components/board/Board';
+// import Modal from './components/modal/Modal';
 // import StartScreen from './components/startScreen/StartScreen';
 
 
-import img1 from './images/natureBackground.jpg'
-import img2 from './images/outerspaceBackground.jpg'
+// import img1 from './images/natureBackground.jpg'
+// import img2 from './images/outerspaceBackground.jpg'
 
 function App() {
   const DEMO_STATE = [0, 2, 5, 0, 0, 0, 1, 0, 1, 2, 3, 0, 0, 1,0]
@@ -332,11 +332,14 @@ function App() {
 
     
     // <div className="app" style={{backgroundImage: `url(${backgroundImageUrl})`}}>
-    <div className='app'>
-      <Modal gameOver={gameOver} modalClickHandler={modalClickHandler} board={board} />
-      <p style={player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }} >Player 2</p>
-      {/* <Board theme={theme} numberOfStonesInMove={numberOfStonesInMove} clickHandler={clickHandler} board={board} gameOver={gameOver} afterAnimation={afterAnimation} isMoving={isMoving} stonesAnimationPosition={stonesAnimationPosition} topOfBoard={topOfBoard} /> */}
-      <p style={!player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }}>Player 1</p>
+    // <div className='app'>
+    //   <Modal gameOver={gameOver} modalClickHandler={modalClickHandler} board={board} />
+    //   <p style={player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }} >Player 2</p>
+    //   {/* <Board theme={theme} numberOfStonesInMove={numberOfStonesInMove} clickHandler={clickHandler} board={board} gameOver={gameOver} afterAnimation={afterAnimation} isMoving={isMoving} stonesAnimationPosition={stonesAnimationPosition} topOfBoard={topOfBoard} /> */}
+    //   <p style={!player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }}>Player 1</p>
+    // </div>
+    <div>
+      Hi
     </div>
   );
 }
