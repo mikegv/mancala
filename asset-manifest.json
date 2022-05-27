@@ -1,25 +1,18 @@
 {
   "files": {
-    "main.css": "/mancala/static/css/main.76b1f5aa.css",
-    "main.js": "/mancala/static/js/main.217968cc.js",
+    "main.css": "/mancala/static/css/main.e874dd50.css",
+    "main.js": "/mancala/static/js/main.85ea7cd1.js",
     "static/js/787.5dbb482b.chunk.js": "/mancala/static/js/787.5dbb482b.chunk.js",
-    "static/media/waterBackgroundPreview.PNG": "/mancala/static/media/waterBackgroundPreview.2eb8472ffd7052726892.PNG",
     "static/media/natureBackground.jpg": "/mancala/static/media/natureBackground.8171bfe9e3aba6b8361d.jpg",
-    "static/media/waterBackground.jpg": "/mancala/static/media/waterBackground.141d94c47a468b5594c8.jpg",
-    "static/media/spaceBackgroundPreview.PNG": "/mancala/static/media/spaceBackgroundPreview.a4132562495a56d472dd.PNG",
-    "static/media/natureBackgroundPreview.PNG": "/mancala/static/media/natureBackgroundPreview.7e50338b66af5a8a64eb.PNG",
-    "static/media/secondTheme.PNG": "/mancala/static/media/secondTheme.5c15963eb6a6407555a7.PNG",
-    "static/media/thirdTheme.PNG": "/mancala/static/media/thirdTheme.107a5a11c329cb210cda.PNG",
-    "static/media/basicTheme.PNG": "/mancala/static/media/basicTheme.d1012687f07f84519e12.PNG",
     "static/media/woodenBoard2.jpg": "/mancala/static/media/woodenBoard2.0ce82c7857d1a09f721a.jpg",
     "static/media/outerspaceBackground.jpg": "/mancala/static/media/outerspaceBackground.51126279a9575ca9e92f.jpg",
     "index.html": "/mancala/index.html",
-    "main.76b1f5aa.css.map": "/mancala/static/css/main.76b1f5aa.css.map",
-    "main.217968cc.js.map": "/mancala/static/js/main.217968cc.js.map",
+    "main.e874dd50.css.map": "/mancala/static/css/main.e874dd50.css.map",
+    "main.85ea7cd1.js.map": "/mancala/static/js/main.85ea7cd1.js.map",
     "787.5dbb482b.chunk.js.map": "/mancala/static/js/787.5dbb482b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76b1f5aa.css",
-    "static/js/main.217968cc.js"
+    "static/css/main.e874dd50.css",
+    "static/js/main.85ea7cd1.js"
   ]
 }
