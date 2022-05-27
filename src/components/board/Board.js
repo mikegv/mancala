@@ -2,7 +2,7 @@ import React from 'react';
 import './Board.css'
 import House from '../house/House';
 import Stone from '../stones/Stone';
-// import styled, { keyframes } from 'styled-components';
+ import styled, { keyframes } from 'styled-components';
 
 //
 //keyframes for stonesAnimation
