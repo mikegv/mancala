@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/mancala/static/css/main.76b1f5aa.css",
-    "main.js": "/mancala/static/js/main.01dbe9da.js",
+    "main.js": "/mancala/static/js/main.217968cc.js",
     "static/js/787.5dbb482b.chunk.js": "/mancala/static/js/787.5dbb482b.chunk.js",
+    "static/media/waterBackgroundPreview.PNG": "/mancala/static/media/waterBackgroundPreview.2eb8472ffd7052726892.PNG",
     "static/media/natureBackground.jpg": "/mancala/static/media/natureBackground.8171bfe9e3aba6b8361d.jpg",
+    "static/media/waterBackground.jpg": "/mancala/static/media/waterBackground.141d94c47a468b5594c8.jpg",
     "static/media/spaceBackgroundPreview.PNG": "/mancala/static/media/spaceBackgroundPreview.a4132562495a56d472dd.PNG",
     "static/media/natureBackgroundPreview.PNG": "/mancala/static/media/natureBackgroundPreview.7e50338b66af5a8a64eb.PNG",
     "static/media/secondTheme.PNG": "/mancala/static/media/secondTheme.5c15963eb6a6407555a7.PNG",
@@ -13,11 +15,11 @@
     "static/media/outerspaceBackground.jpg": "/mancala/static/media/outerspaceBackground.51126279a9575ca9e92f.jpg",
     "index.html": "/mancala/index.html",
     "main.76b1f5aa.css.map": "/mancala/static/css/main.76b1f5aa.css.map",
-    "main.01dbe9da.js.map": "/mancala/static/js/main.01dbe9da.js.map",
+    "main.217968cc.js.map": "/mancala/static/js/main.217968cc.js.map",
     "787.5dbb482b.chunk.js.map": "/mancala/static/js/787.5dbb482b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76b1f5aa.css",
-    "static/js/main.01dbe9da.js"
+    "static/js/main.217968cc.js"
   ]
 }
