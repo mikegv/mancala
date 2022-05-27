@@ -3,7 +3,7 @@ import './StartScreen.css'
 import BasicThemeImage from '../../images/basicTheme.PNG'
 import SecondThemeImage from '../../images/secondTheme.PNG'
 import ThirdThemeImage from '../../images/thirdTheme.PNG'
-import Collapsible from '../collapsible/Collapsible'
+// import Collapsible from '../collapsible/Collapsible'
 
 import NaturePreview from '../../images/natureBackgroundPreview.PNG'
 import SpacePreview from '../../images/spaceBackgroundPreview.PNG'
@@ -39,7 +39,7 @@ const StartScreen = (props) => {
 
 
 
-            <Collapsible />
+            {/* <Collapsible /> */}
 
         </div>
     )
