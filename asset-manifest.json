@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/mancala/static/css/main.e874dd50.css",
-    "main.js": "/mancala/static/js/main.85ea7cd1.js",
+    "main.js": "/mancala/static/js/main.0a0023e5.js",
     "static/js/787.5dbb482b.chunk.js": "/mancala/static/js/787.5dbb482b.chunk.js",
     "static/media/natureBackground.jpg": "/mancala/static/media/natureBackground.8171bfe9e3aba6b8361d.jpg",
     "static/media/woodenBoard2.jpg": "/mancala/static/media/woodenBoard2.0ce82c7857d1a09f721a.jpg",
     "static/media/outerspaceBackground.jpg": "/mancala/static/media/outerspaceBackground.51126279a9575ca9e92f.jpg",
     "index.html": "/mancala/index.html",
     "main.e874dd50.css.map": "/mancala/static/css/main.e874dd50.css.map",
-    "main.85ea7cd1.js.map": "/mancala/static/js/main.85ea7cd1.js.map",
+    "main.0a0023e5.js.map": "/mancala/static/js/main.0a0023e5.js.map",
     "787.5dbb482b.chunk.js.map": "/mancala/static/js/787.5dbb482b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e874dd50.css",
-    "static/js/main.85ea7cd1.js"
+    "static/js/main.0a0023e5.js"
   ]
 }
