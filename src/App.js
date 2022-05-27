@@ -51,14 +51,14 @@ function App() {
 
 
 
-  useEffect(
-    ()=>{
-      if(firstLoad)setFirstLoad(false)
-      else{
-        setIsMoving(true)
-      }
-    }
-  , [stonesAnimationPosition])
+  // useEffect(
+  //   ()=>{
+  //     if(firstLoad)setFirstLoad(false)
+  //     else{
+  //       setIsMoving(true)
+  //     }
+  //   }
+  // , [stonesAnimationPosition])
 
 
 
