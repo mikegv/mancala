@@ -103,16 +103,6 @@ function App() {
       }
 
       checkGameOver()
-      //check if steal other players stones
-      //
-      //if(pocket === 1) & 14 - index > 0 then move to players store
-      /* if(!isMoving){
-      if(stonesAnimationPosition.index === 5){
-        if(board[6] > 4){
-          console.log('here')
-        }
-      }
-    } */
 
    
 
@@ -290,42 +280,15 @@ useEffect(()=>{
     // console.log('checking winner...')
 
     if (state[1] === 0 & state[2] === 0 & state[3] === 0 & state[4] === 0 & state[5] === 0 & state[6] === 0 & numberOfStonesInMove === 0) {
-      //
-      //player 1 has no more stones
-      //transfer player 2 remaining seeds to player 2 store
-      //
-      /* state[0] = state[0] + state[8] + state[9] + state[10] + state[11] + state[12] + state[13] */
-
-      //
-      //make this for loop into its own function to call in the two cases where someone ran out of stones
-      /* for (let i = 1; i < state.length; i++) {
-        if (i !== 7) {
-          state[i] = 0
-        }
-      } */
-      //for all indexes of the array set them all to zero except for the two stores, index 0 & 7 
 
 
-      setBoard([...state])
-      /* setGameOver(true) */
-      return
+
+      // setBoard([...state])
+      
+      // return
     }
     if (state[8] === 0 & state[9] === 0 & state[10] === 0 & state[11] === 0 & state[12] === 0 & state[13] === 0 & numberOfStonesInMove === 0) {
-      //
-      //player 2 has no more stones
-      //transfer player 1 remaining seeds to player 1 store
-      //     
-      /* state[7] = state[7] + state[1] + state[2] + state[3] + state[4] + state[5] + state[6]
 
-      for (let i = 1; i < state.length; i++) {
-        if (i !== 7) {
-          state[i] = 0
-        }
-      }
-
-      setBoard([...state])
-      
-      return */
     }
 
     
@@ -344,7 +307,6 @@ useEffect(()=>{
     if (index === 0 & !player1) {
       return
     }
-    /* setPlayer1(() => !player1) */
   }
 
 
