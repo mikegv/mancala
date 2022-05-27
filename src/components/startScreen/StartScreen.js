@@ -7,11 +7,10 @@ import Collapsible from '../collapsible/Collapsible'
 
 import NaturePreview from '../../images/natureBackgroundPreview.PNG'
 import SpacePreview from '../../images/spaceBackgroundPreview.PNG'
-import WaterPreview from '../../images/waterBackgroundPreview.PNG'
 
 const StartScreen = (props) => {
     let themeImage = props.theme === 'basic' ? BasicThemeImage : props.theme === 'second' ? SecondThemeImage : ThirdThemeImage
-    let backgroundImage = props.backgroundImage === 'img1' ? NaturePreview : props.backgroundImage === 'img2' ? SpacePreview : WaterPreview
+    let backgroundImage = props.backgroundImage === 'img1' ? NaturePreview : SpacePreview
     return (
         <div className='startScreen'>
             <div className='titleArea'>
@@ -34,7 +33,7 @@ const StartScreen = (props) => {
                 <img src={backgroundImage} alt='image of theme' width={'300px'} height={'auto'} />
             </div>
                     <p>Choose A Background</p>
-                    <button onClick={() => props.backgroundClickHandler('img1')} >Nature Background</button> <button onClick={() => props.backgroundClickHandler('img2')} >Space Background</button><button onClick={() => props.backgroundClickHandler('img3')} >Lake Background</button>
+                    <button onClick={() => props.backgroundClickHandler('img1')} >Nature Background</button> <button onClick={() => props.backgroundClickHandler('img2')} >Space Background</button>
                 </div>
             </div>
 
