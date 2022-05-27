@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "homepage": "https://mikegv.github.io/mancala",
   "private": true,
+  "engines": {
+    "node": "16.15.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",

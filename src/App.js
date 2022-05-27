@@ -1,7 +1,6 @@
-import { useState } from 'react';
 
 import './App.css';
-// import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 // import Board from './components/board/Board';
 // import Modal from './components/modal/Modal';
 // import StartScreen from './components/startScreen/StartScreen';
@@ -328,7 +327,7 @@ function App() {
   //     )
   // }
 
-  let backgroundImageUrl = backgroundImage === 'img1' ? img1 : img2 
+  // let backgroundImageUrl = backgroundImage === 'img1' ? img1 : img2 
   
   return (
 
