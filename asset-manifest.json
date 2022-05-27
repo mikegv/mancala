@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mancala/static/css/main.2c30450c.css",
-    "main.js": "/mancala/static/js/main.6e38cda0.js",
+    "main.js": "/mancala/static/js/main.1f255d8c.js",
     "static/js/787.5dbb482b.chunk.js": "/mancala/static/js/787.5dbb482b.chunk.js",
     "static/media/natureBackground.jpg": "/mancala/static/media/natureBackground.8171bfe9e3aba6b8361d.jpg",
     "static/media/spaceBackgroundPreview.PNG": "/mancala/static/media/spaceBackgroundPreview.a4132562495a56d472dd.PNG",
@@ -13,11 +13,11 @@
     "static/media/outerspaceBackground.jpg": "/mancala/static/media/outerspaceBackground.51126279a9575ca9e92f.jpg",
     "index.html": "/mancala/index.html",
     "main.2c30450c.css.map": "/mancala/static/css/main.2c30450c.css.map",
-    "main.6e38cda0.js.map": "/mancala/static/js/main.6e38cda0.js.map",
+    "main.1f255d8c.js.map": "/mancala/static/js/main.1f255d8c.js.map",
     "787.5dbb482b.chunk.js.map": "/mancala/static/js/787.5dbb482b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c30450c.css",
-    "static/js/main.6e38cda0.js"
+    "static/js/main.1f255d8c.js"
   ]
 }
