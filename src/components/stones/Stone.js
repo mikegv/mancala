@@ -1,4 +1,6 @@
-// import './Stone.css'
+// import './Stone.css'  
+    // ${props => props.theme === "second" ? 
+    // 'background-color: red' : props.theme == 'third' ? 'background-color: purple' : 'background-color: rgb(0,68,255)'}
 import styled from 'styled-components';
 
 const Stone = styled.div`
@@ -10,8 +12,6 @@ const Stone = styled.div`
     margin: 1px;
     box-shadow: inset 3px 2px 6px 3px rgb(0,30, 90);
     background-color: red;
-    /* ${props => props.theme === "second" ? 
-    'background-color: red' : props.theme == 'third' ? 'background-color: purple' : 'background-color: rgb(0,68,255)'} */
    
 `
 // const Stone = (props) => {
