@@ -9,8 +9,9 @@ const Stone = styled.div`
     border-radius: 25px;
     margin: 1px;
     box-shadow: inset 3px 2px 6px 3px rgb(0,30, 90);
-    ${props => props.theme === "second" ? 
-    'background-color: red' : props.theme == 'third' ? 'background-color: purple' : 'background-color: rgb(0,68,255)'}
+    background-color: red;
+    /* ${props => props.theme === "second" ? 
+    'background-color: red' : props.theme == 'third' ? 'background-color: purple' : 'background-color: rgb(0,68,255)'} */
    
 `
 // const Stone = (props) => {

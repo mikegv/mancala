@@ -1,5 +1,5 @@
 import React from 'react';
-// import Stone from '../stones/Stone';
+ import Stone from '../stones/Stone';
 
 const houseStyle = {
   display: 'flex',
