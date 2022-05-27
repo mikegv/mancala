@@ -46,12 +46,12 @@ const Board = (props) => {
       <div>
 
         <div className='boardRow'>
-          {/* <House onClick={props.clickHandler} houseCount={props.board[13]} index={13} theme={props.theme} />
+          <House onClick={props.clickHandler} houseCount={props.board[13]} index={13} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[12]} index={12} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[11]} index={11} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[10]} index={10} theme={props.theme} />
           <House onClick={props.clickHandler} houseCount={props.board[9]} index={9} theme={props.theme} />
-          <House onClick={props.clickHandler} houseCount={props.board[8]} index={8} theme={props.theme} /> */}
+          <House onClick={props.clickHandler} houseCount={props.board[8]} index={8} theme={props.theme} /> 
         </div>
 
         <div className='boardRow' >
