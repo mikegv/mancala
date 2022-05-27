@@ -1,5 +1,5 @@
 import React from 'react';
-import Stone from '../stones/Stone';
+// import Stone from '../stones/Stone';
 
 const houseStyle = {
   display: 'flex',
@@ -19,7 +19,7 @@ const storeStyle = {
   maxHeight: '100%',
   overflow: 'hidden',
   padding: '25px',
-  boxShadow: 'inset 5px 6px 4px 3px  #000001', /*offset-x offset-y blur-radius spread-radius*/
+  boxShadow: 'inset 5px 6px 4px 3px  #000001', 
   borderRadius: '30%',
   margin: '4px',
   textAlign: 'center',
@@ -32,24 +32,24 @@ const storeStyle = {
 const House = (props) => {
   //component for all pockets, conditionally renders the two special ones
 
-  if (props.index === 0 || props.index === 7) {
-    return (
-      <>
+  // if (props.index === 0 || props.index === 7) {
+  //   return (
+  //     <>
 
-      <div className='store' style={storeStyle}>
-      {props.houseCount}
+  //     <div className='store' style={storeStyle}>
+  //     {props.houseCount}
 
-               {new Array(props.houseCount).fill(1).map((item, index) => <Stone theme={props.theme} />
-        )}
+  //              {new Array(props.houseCount).fill(1).map((item, index) => <Stone theme={props.theme} />
+  //       )}
 
-      </div>
-      </>
-    )
-  }
+  //     </div>
+  //     </>
+  //   )
+  // }
   
   return (
     <div style={{ textAlign: 'center' }}>
-      <span style={{ fontWeight: 'bolder' }}>{props.index < 14 && props.index > 7 && props.houseCount}</span>
+      {/* <span style={{ fontWeight: 'bolder' }}>{props.index < 14 && props.index > 7 && props.houseCount}</span>
 
       <div className='house' style={houseStyle} onClick={(e) => props.onClick(e, props.index)}>
         {new Array(props.houseCount).fill(1).map((item, index) => {
@@ -62,7 +62,7 @@ const House = (props) => {
         )}
 
       </div>
-      <span style={{ fontWeight: 'bolder' }}>{props.index > 0 && props.index < 7 && props.houseCount}</span>
+      <span style={{ fontWeight: 'bolder' }}>{props.index > 0 && props.index < 7 && props.houseCount}</span> */}
     </div>
   )
 
