@@ -35,7 +35,7 @@ const StonesAnimation = styled.div`
 
 const Board = (props) => {
 
-  let numberOfStonesArray = props.numberOfStonesInMove > 4 ? [<Stone theme={props.theme} style={{position:'absolute', left:'10px', top: '15px', zIndex: '14'}}/>,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />] : new Array(props.numberOfStonesInMove).fill(0).map(item => <Stone theme={props.theme} /> )
+  let numberOfStonesArray = props.numberOfStonesInMove > 4 ? [<Stone theme={props.theme} style={{position:'absolute', left:'10px', top: '15px', zIndex: '14'}}/>,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />,<Stone theme={props.theme} />] : new Array(props.numberOfStonesInMove).fill(0).map((item,index) => <Stone key={index} theme={props.theme} /> )
 
   return (
       <div className='board' ref={props.topOfBoard}> 

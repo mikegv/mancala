@@ -13,6 +13,8 @@ const StartScreen = (props) => {
     let backgroundImage = props.backgroundImage === 'img1' ? NaturePreview : SpacePreview
     return (
         <div className='startScreen'>
+                {console.log('render')}
+
             <div className='titleArea'>
                 <h1 className='titleText back'>Mancala</h1>
                 <h1 className='titleText front'>Mancala</h1>

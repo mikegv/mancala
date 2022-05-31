@@ -39,7 +39,7 @@ const House = (props) => {
       <div className='store' style={storeStyle}>
       {props.houseCount}
 
-               {new Array(props.houseCount).fill(1).map((item, index) => <Stone theme={props.theme} />
+               {new Array(props.houseCount).fill(1).map((item, index) => <Stone theme={props.theme} key={index} />
         )}
 
       </div>

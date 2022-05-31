@@ -24,7 +24,7 @@ function App() {
   const [showStartScreen, setShowStartScreen] = useState(true)
   const [theme, setTheme] = useState('basic')
   const [backgroundImage, setBackgroundImage] = useState('img1')
-
+  
 
 
   const checkGameOver = () => {
@@ -82,26 +82,6 @@ function App() {
         
     }
       
-
-
-
-      //check if game over
-      if(board[1] === 0 & board[2] === 0 & board[3] === 0 & board[4] === 0 & board[5] === 0 & board[6] === 0 )
-      {
-        playerTotal = board[0]
-        for(let i = 8; i < 14; i++){
-            playerTotal = board[i] + playerTotal
-        }        
-        setBoard(prevState => [playerTotal, 0,0,0,0,0,0,prevState[7], 0,0,0,0,0,0])
-        setGameOver(true)}
-      else if (board[8] === 0 & board[9] === 0 & board[10] === 0 & board[11] === 0 & board[12] === 0 & board[13] === 0 ) {
-        playerTotal = board[7]
-        for(let i = 1; i < 7; i++){
-            playerTotal = board[i] + playerTotal
-        }
-        setBoard(prevState => [prevState[0], 0,0,0,0,0,0, playerTotal, 0,0,0,0,0,0])
-        setGameOver(true)
-      }
 
       checkGameOver()
 
@@ -206,11 +186,13 @@ useEffect(()=>{
 
   const clickHandler = (e, pocketIndex) => {
 
-    setNumberOfStonesInMove(board[pocketIndex])
+    
 
     if (board[pocketIndex] === 0) return //if that pocket is empty do nothing
 
-    
+    setNumberOfStonesInMove(board[pocketIndex])
+   
+   
     let stones = board[pocketIndex]
 
 
@@ -251,22 +233,6 @@ useEffect(()=>{
       state[index] = 0
     }
 
-
-    //then check if any side of board is empty
-    //
-    // console.log("this index: ", pocketIndex)
-    // console.log('checking winner...')
-
-    if (state[1] === 0 & state[2] === 0 & state[3] === 0 & state[4] === 0 & state[5] === 0 & state[6] === 0 & numberOfStonesInMove === 0) {
-
-
-
-    }
-    if (state[8] === 0 & state[9] === 0 & state[10] === 0 & state[11] === 0 & state[12] === 0 & state[13] === 0 & numberOfStonesInMove === 0) {
-
-    }
-
-    
 
     setBoard([...state])
 
@@ -333,7 +299,7 @@ useEffect(()=>{
 
     
     <div className="app" style={{backgroundImage: `url(${backgroundImageUrl})`}}>
-    
+    {console.log('render')}
       <Modal gameOver={gameOver} modalClickHandler={modalClickHandler} board={board} />
       <p style={player1 ? { color: 'black' } : { color: 'rgb(21, 255, 28)' }} >Player 2</p>
       <Board theme={theme} numberOfStonesInMove={numberOfStonesInMove} clickHandler={clickHandler} board={board} gameOver={gameOver} afterAnimation={afterAnimation} isMoving={isMoving} stonesAnimationPosition={stonesAnimationPosition} topOfBoard={topOfBoard} /> 
